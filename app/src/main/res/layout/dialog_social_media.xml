@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet_bg_dialog"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_50dp_gradient_primary"
+            android:backgroundTint="#CDCFD0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="@string/select_social_media"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_13ssp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/d_SM_Instagram_Lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_27sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_edit_profile_instagram" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/instagram"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_13ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="#F5F6F6" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/d_SM_Youtube_Lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_27sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_edit_profile_youtube" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/youTube"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_13ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="#F5F6F6" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/d_SM_Facebook_Lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_27sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_edit_profile_facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/facebook"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_13ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="#F5F6F6" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/d_SM_Twitter_Lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_27sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_edit_profile_twitter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/twitter"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_13ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="#F5F6F6" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/d_SM_Email_Lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_27sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_edit_profile_email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/email"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_13ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="#F5F6F6" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/d_SM_Website_Lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_27sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_edit_profile_website" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/website"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_13ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

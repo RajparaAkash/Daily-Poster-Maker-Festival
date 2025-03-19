@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        android:background="@color/subBackgroundColor" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/layoutTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2F3130">
+
+            <com.festival.dailypostermaker.MyUtils.SquareRelativeLayout
+                android:id="@+id/squareRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="@dimen/_minus17sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tempMainImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/img_place_holder" />
+
+            </com.festival.dailypostermaker.MyUtils.SquareRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:orientation="horizontal"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_67sdp"
+                android:layout_below="@id/squareRelativeLayout"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/icon_location" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/sf_pro_regular"
+                        android:includeFontPadding="false"
+                        android:maxLines="2"
+                        android:text="@string/business_address"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon_edit_profile_whatsapp" />
+
+                        <TextView
+                            android:id="@+id/tvWhatsapp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/sf_pro_regular"
+                            android:includeFontPadding="false"
+                            android:lines="1"
+                            android:text="@string/_123_456_7890"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgSocialMedia"
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon_edit_profile_instagram" />
+
+                        <TextView
+                            android:id="@+id/tvSocialMedia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/sf_pro_regular"
+                            android:includeFontPadding="false"
+                            android:lines="1"
+                            android:text="@string/username_123456"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:id="@+id/itemViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+        <com.festival.dailypostermaker.MyUtils.SquareRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_53sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/rounded_bg"
+                android:padding="@dimen/_5sdp"
+                android:elevation="@dimen/_1sdp"
+                android:rotation="180"
+                android:src="@drawable/setting_arrow_img"
+                app:tint="@color/colorAccent" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:elevation="@dimen/_1sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/rounded_bg"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/setting_arrow_img"
+                app:tint="@color/colorAccent" />
+        </com.festival.dailypostermaker.MyUtils.SquareRelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.festival.dailypostermaker.PageIndicatorView.PageIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_1sdp"
+        app:piv_animationType="scale"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_selectedColor="@color/colorPrimary"
+        app:piv_unselectedColor="@color/shimmerPlaceholder"
+        attrs:piv_padding="@dimen/_5sdp"
+        attrs:piv_radius="@dimen/_5sdp" />
+
+    <include layout="@layout/layout_post_button" />
+
+</LinearLayout>

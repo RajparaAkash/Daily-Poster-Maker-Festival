@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subBackgroundColor"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivityCreateAddText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/backgroundColor">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/closeImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_13sdp"
+            android:src="@drawable/icon_close_black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_medium"
+            android:includeFontPadding="false"
+            android:text="@string/add_text"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/doneTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/bg_50dp_gradient_primary"
+            android:fontFamily="@font/inter_medium"
+            android:foreground="@drawable/ripple_50dp_black"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/bg_15dp_white">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/changeFontEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="start"
+            android:hint="@string/please_enter_text"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/double_tap_to_edit"
+            android:textColor="@color/textColor"
+            android:textColorHint="#494949"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/ad_native_space_holder_large" />
+
+
+</LinearLayout>

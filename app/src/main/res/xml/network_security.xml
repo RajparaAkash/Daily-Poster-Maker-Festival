@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">phpstack-1219077-5222678.cloudwaysapps.com</domain>
+    </domain-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">loop.sfo2.cdn.digitaloceanspaces.com</domain>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,154 @@
+<resources>
+
+    <declare-styleable name="ucrop_UCropView">
+
+        <!--Crop image view-->
+        <attr name="ucrop_aspect_ratio_x" format="float" />
+        <attr name="ucrop_aspect_ratio_y" format="float" />
+
+        <!--Overlay view-->
+        <attr name="ucrop_show_oval_crop_frame" format="boolean" />
+        <attr name="ucrop_circle_dimmed_layer" format="boolean" />
+        <attr name="ucrop_dimmed_color" format="color" />
+
+        <attr name="ucrop_grid_stroke_size" format="dimension" />
+        <attr name="ucrop_grid_color" format="color" />
+        <attr name="ucrop_grid_row_count" format="integer" />
+        <attr name="ucrop_grid_column_count" format="integer" />
+        <attr name="ucrop_show_grid" format="boolean" />
+
+        <attr name="ucrop_frame_stroke_size" format="dimension" />
+        <attr name="ucrop_frame_color" format="color" />
+        <attr name="ucrop_show_frame" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ucrop_AspectRatioTextView">
+        <attr name="ucrop_artv_ratio_title" format="string" />
+        <attr name="ucrop_artv_ratio_x" format="float" />
+        <attr name="ucrop_artv_ratio_y" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ToggleImageButton">
+        <attr name="tib_drawable_on" format="reference" />
+        <attr name="tib_drawable_off" format="reference" />
+    </declare-styleable>
+
+    <attr name="rv_backgroundColor" format="color" />
+    <attr name="rv_backgroundPressColor" format="color" />
+    <attr name="rv_cornerRadius" format="dimension" />
+    <attr name="rv_strokeWidth" format="dimension" />
+    <attr name="rv_strokeColor" format="color" />
+    <attr name="rv_strokePressColor" format="color" />
+    <attr name="rv_textPressColor" format="color" />
+    <attr name="rv_isRadiusHalfHeight" format="boolean" />
+    <attr name="rv_isWidthHeightEqual" format="boolean" />
+    <attr name="rv_cornerRadius_TL" format="dimension" />
+    <attr name="rv_cornerRadius_TR" format="dimension" />
+    <attr name="rv_cornerRadius_BL" format="dimension" />
+    <attr name="rv_cornerRadius_BR" format="dimension" />
+    <attr name="rv_isRippleEnable" format="boolean" />
+
+    <attr name="photo_src" format="reference" />
+
+    <declare-styleable name="StrokeTextView">
+        <attr name="gradientOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseRatingBar">
+        <attr name="srb_numStars" format="integer" />
+        <attr name="srb_minimumStars" format="float" />
+        <attr name="srb_rating" format="float" />
+        <attr name="srb_starPadding" format="dimension" />
+        <attr name="srb_drawableEmpty" format="reference" />
+        <attr name="srb_drawableFilled" format="reference" />
+        <attr name="srb_isIndicator" format="boolean" />
+        <attr name="srb_scrollable" format="boolean" />
+        <attr name="srb_clickable" format="boolean" />
+        <attr name="srb_clearRatingEnabled" format="boolean" />
+        <attr name="srb_starWidth" format="dimension" />
+        <attr name="srb_starHeight" format="dimension" />
+        <attr name="srb_stepSize" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="DiscreteScrollView">
+        <attr name="dsv_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PageIndicatorView">
+        <attr name="piv_orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="piv_viewPager" format="reference" />
+        <attr name="piv_select" format="integer" />
+
+        <attr name="piv_count" format="integer" />
+        <attr name="piv_dynamicCount" format="boolean" />
+
+        <attr name="piv_radius" format="dimension" />
+        <attr name="piv_padding" format="dimension" />
+        <attr name="piv_strokeWidth" format="dimension" />
+        <attr name="piv_scaleFactor" format="float" />
+        <attr name="piv_autoVisibility" format="boolean" />
+
+        <attr name="piv_unselectedColor" format="color" />
+        <attr name="piv_selectedColor" format="color" />
+
+        <attr name="piv_fadeOnIdle" format="boolean" />
+        <attr name="piv_idleDuration" format="integer" />
+
+        <attr name="piv_interactiveAnimation" format="boolean" />
+        <attr name="piv_animationDuration" format="integer" />
+        <attr name="piv_animationType">
+            <enum name="none" value="0" />
+            <enum name="color" value="1" />
+            <enum name="scale" value="2" />
+            <enum name="worm" value="3" />
+            <enum name="slide" value="4" />
+            <enum name="fill" value="5" />
+            <enum name="thinWorm" value="6" />
+            <enum name="drop" value="7" />
+            <enum name="swap" value="8" />
+            <enum name="scale_down" value="9" />
+        </attr>
+        <attr name="piv_rtl_mode">
+            <enum name="on" value="0" />
+            <enum name="off" value="1" />
+            <enum name="auto" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ColorPickerPreference">
+        <attr name="alphaSlider" format="boolean"/>
+        <attr name="lightnessSlider" format="boolean"/>
+        <attr name="border" format="boolean"/>
+        <attr name="density" format="integer"/>
+        <attr name="initialColor" format="integer"/>
+        <attr name="wheelType" format="enum">
+            <enum name="FLOWER" value="0"/>
+            <enum name="CIRCLE" value="1"/>
+        </attr>
+        <attr name="lightnessSliderView" format="reference"/>
+        <attr name="alphaSliderView" format="reference"/>
+        <attr name="pickerColorEdit" format="boolean"/>
+        <attr name="pickerColorEditTextColor" format="integer"/>
+        <attr name="pickerTitle" format="reference|string"/>
+        <attr name="pickerButtonOk" format="reference|string"/>
+        <attr name="pickerButtonCancel" format="reference|string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AbsCustomSlider">
+        <attr name="inVerticalOrientation" format="boolean"/>
+    </declare-styleable>
+
+</resources>

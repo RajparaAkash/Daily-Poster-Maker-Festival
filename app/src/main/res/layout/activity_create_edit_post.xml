@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivityCreateEditPost">
+
+    <include layout="@layout/ad_banner_space_holder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/backLay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_7sdp"
+            android:foreground="@drawable/ripple_50dp_primary">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/icon_back" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_medium"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="@string/create"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/nextTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/bg_50dp_gradient_primary"
+            android:fontFamily="@font/sf_pro_medium"
+            android:foreground="@drawable/ripple_50dp_black"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="@dimen/_11sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/headerViewColor" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/subBackgroundColor">
+
+        <com.festival.dailypostermaker.PhotoEditor.PhotoEditorView
+            android:id="@+id/imgPhotoEditor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_162sdp"
+            android:orientation="vertical">
+
+            <com.festival.dailypostermaker.MyUtils.CustomViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="#F7F7F7" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/white"
+                    app:tabGravity="fill"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMode="fixed"
+                    app:tabRippleColor="@android:color/transparent" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</LinearLayout>

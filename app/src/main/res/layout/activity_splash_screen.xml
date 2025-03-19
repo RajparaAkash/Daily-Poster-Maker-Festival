@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivitySplashScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_110sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/app_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/adTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:fontFamily="@font/inter_regular"
+            android:singleLine="true"
+            android:text="@string/this_action_may_contains_advertisement"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_10ssp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/ad_banner_space_holder" />
+
+</LinearLayout>

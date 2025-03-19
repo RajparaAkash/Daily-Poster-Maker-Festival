@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Daily Poster Maker &amp; Festival</string>
+
+    <string name="personal">Personal</string>
+    <string name="business">Business</string>
+    <string name="photo">Photo</string>
+    <string name="upload">Upload</string>
+    <string name="name">Name</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="your_mobile_no">Your Mobile No</string>
+    <string name="social_media">Social Media</string>
+    <string name="instagram">Instagram</string>
+    <string name="whatsApp">WhatsApp</string>
+    <string name="youTube">YouTube</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="business_logo">Business Logo</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="share_to">Share to</string>
+    <string name="search">Search</string>
+    <string name="saved_post">Saved Post</string>
+    <string name="cancel">Cancel</string>
+    <string name="suggested_categories">Suggested Categories</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="refund_and_cancellation">Refund and Cancellation</string>
+    <string name="more_option">More Option</string>
+    <string name="discard">Discard</string>
+    <string name="create_your_personal_post">Create Your Personal Post</string>
+    <string name="to_write_on_choose_a_background">To write on, choose a background</string>
+    <string name="search_background">Search Background</string>
+    <string name="edit_photo">Edit Photo</string>
+    <string name="done">DONE</string>
+    <string name="font">Font</string>
+    <string name="box_color">Box Color</string>
+    <string name="color">Color</string>
+    <string name="align">Align</string>
+    <string name="shadow">Shadow</string>
+    <string name="text_size">Text Size</string>
+    <string name="opacity">Opacity</string>
+    <string name="add_text">Add Text</string>
+    <string name="downloads">Downloads</string>
+    <string name="background">Background</string>
+    <string name="no_any_background">No Any Background</string>
+    <string name="no_background_please_add">No Background Please Add</string>
+    <string name="switching_to_business">Switching to Business</string>
+    <string name="switching_to_personal">Switching to Personal</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="more">More</string>
+    <string name="select_social_media">Select Social Media</string>
+    <string name="no_download_data">No downloaded data found\nat the moment</string>
+    <string name="add">Add</string>
+    <string name="all_backgrounds">All Backgrounds</string>
+    <string name="my_backgrounds">My Backgrounds</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete ?</string>
+    <string name="are_you_sure_you_want_to_discard_all_changes">Are you sure you want to discard all changes ?</string>
+    <string name="background_downloading">Background Downloading</string>
+    <string name="none">None</string>
+    <string name="feedback">Feedback</string>
+    <string name="give_feedback">Give Feedback</string>
+    <string name="please_share_your_experience_about_our_apps">Please share your experience about our apps.</string>
+    <string name="describe_here">Describe Here…</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="your_name">Your Name</string>
+    <string name="about_you">About You</string>
+    <string name="your_address">Your Address</string>
+    <string name="_123_456_7890">(123) 456–7890</string>
+    <string name="username_123456">username_123456</string>
+    <string name="business_name">Business Name</string>
+    <string name="about_business">About Business</string>
+    <string name="business_address">Business Address</string>
+    <string name="feedback_is_submitted_successfully">Feedback is submitted successfully</string>
+    <string name="failed_to_submit_feedback">Failed to submit feedback</string>
+    <string name="we_value_your_feedback">We Value Your Feedback!!!</string>
+    <string name="please_take_a_moment_and_rate_this_app">Please take a moment and rate this app</string>
+    <string name="thank_you_for_using_this_app">Thank You For Using This App!!!</string>
+    <string name="are_you_sure_You_want_to_exit_this_app">Are you sure, You want to exit this app?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="this_action_may_contains_advertisement">This action may contains advertisement</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+    <string name="festival">Festival</string>
+    <string name="download">Download</string>
+    <string name="preferred_language">Preferred Language</string>
+    <string name="save">Save</string>
+    <string name="choose_your_language">Choose your Language :</string>
+    <string name="share">Share</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="quotes">Quotes</string>
+    <string name="create">Create</string>
+    <string name="please_enter_text">Please Enter Text</string>
+    <string name="double_tap_to_edit">Double tap to edit !</string>
+    <string name="general">General</string>
+    <string name="no_network_available">No Network Available</string>
+    <string name="please_check_your_connection_or_try_again">Please check your connection or try again</string>
+    <string name="unlock_these_poster">Unlock These Poster</string>
+    <string name="watch_ad_to_download">Watch Ad to Download</string>
+    <string name="please_wait">Please wait</string>
+    <string name="error_message">Failed to retrieve data. Please try again</string>
+    <string name="try_again">Try Again</string>
+    <string name="deleted_successfully">Deleted Successfully</string>
+    <string name="edit">Edit</string>
+
+    <string name="intro_des_01">1L+ Template, Festivals, Events Anniversaries, Quotes</string>
+    <string name="intro_des_02">Posters with Your Business Logo, Name, Address and Photo</string>
+    <string name="intro_des_03">Join Our Daily Quotes Club with a Photo and Name Every Day</string>
+
+    <string name="you_can_change_language">You can change language any time\nfrom settings</string>
+    <string name="upload_your_thoughts_from_your_phone_gallery">Upload your thoughts from\nyour phone gallery</string>
+    <string name="terms_and_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="watch_ad_to_download_amp_use"><![CDATA[(Watch Ad to Download & Use)]]></string>
+    <string name="tap_to_unlock_all">Tap to unlock all <b><font color='#FD6B01'>Features</font></b></string>
+
+
+    <!--*********-->
+    <string name="dsv_ex_msg_dont_set_lm" translatable="false">You should not set LayoutManager on DiscreteScrollView.class instance. Library uses a special one. Just don\'t call the method.</string>
+    <string name="dsv_ex_msg_adapter_wrong_recycler" translatable="false">InfiniteScrollAdapter is supposed to work only with DiscreteScrollView</string>
+
+    <!--*********-->
+    <string name="ucrop_label_original" translatable="false">Original</string>
+    <string name="ucrop_error_input_data_is_absent" translatable="false">Both input and output Uri must be specified</string>
+
+    <!--*********-->
+    <string name="default_notification_channel_id" translatable="false">com.festival.dailypostermaker.urgent</string>
+
+</resources>

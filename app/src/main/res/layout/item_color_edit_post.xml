@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_42sdp"
+    android:layout_height="@dimen/_42sdp"
+    android:layout_marginStart="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_2sdp">
+
+    <FrameLayout
+        android:id="@+id/color_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/noneTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:text="@string/none"
+        android:textColor="#4D626D"
+        android:textSize="@dimen/_11ssp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/colorSelectImg"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_tick_color_select"
+        android:visibility="gone" />
+
+</RelativeLayout>

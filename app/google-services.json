@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "74801839541",
+    "project_id": "daily-poster-maker-303f6",
+    "storage_bucket": "daily-poster-maker-303f6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74801839541:android:ab75ac60598aac9cb0adfc",
+        "android_client_info": {
+          "package_name": "com.festival.dailypostermaker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC1AI58v5npjiRWzt8FJXrEpoyZQ75Gxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

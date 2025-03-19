@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/text_size"
+        android:textColor="#605F5F"
+        android:textSize="@dimen/_11ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/fontSizeSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:maxHeight="@dimen/_3sdp"
+            android:progressDrawable="@drawable/progressbar_line"
+            android:thumb="@drawable/progressbar_thumb" />
+
+        <com.festival.dailypostermaker.MyUtils.ToggleImageButton
+            android:id="@+id/fontBoldImg"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:tib_drawable_off="@drawable/icon_font_bold_unselect"
+            app:tib_drawable_on="@drawable/icon_font_bold_select" />
+
+        <com.festival.dailypostermaker.MyUtils.ToggleImageButton
+            android:id="@+id/fontItalicImg"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            app:tib_drawable_off="@drawable/icon_font_italic_unselect"
+            app:tib_drawable_on="@drawable/icon_font_italic_select" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/epFontRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_font_edit_post" />
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivityLanguageSelection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/backLay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_7sdp"
+            android:foreground="@drawable/ripple_50dp_primary">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/icon_back" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_medium"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="@string/preferred_language"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/languageSaveTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/bg_50dp_gradient_primary"
+            android:fontFamily="@font/inter_medium"
+            android:foreground="@drawable/ripple_50dp_black"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11ssp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/headerViewColor" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/language_banner_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:fontFamily="@font/inter_medium"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:text="@string/choose_your_language"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_14ssp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/languageRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:fontFamily="@font/sf_pro_regular"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/you_can_change_language"
+                    android:textColor="#8D8D8D"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/ad_native_space_holder_small" />
+
+</LinearLayout>

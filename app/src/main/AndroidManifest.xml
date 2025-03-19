@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.instagram.android" />
+        <package android:name="com.twitter.android" />
+
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DailyPosterMakerFestival"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Activity.ActivitySplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ActivityWelcome"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivityAppExit2"
+            android:exported="false"
+            android:theme="@style/ExitTheme" />
+        <activity
+            android:name=".Activity.ActivityAppExit1"
+            android:exported="false"
+            android:theme="@style/ExitTheme" />
+        <activity
+            android:name=".Activity.ActivityMain"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".Activity.ActivityDownloads"
+            android:exported="false"/>
+        <activity
+            android:name=".Activity.ActivityEditDetails"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ActivitySearchPost"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ActivityCreateSavedPost"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivitySettings"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivityLanguageSelection"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivityCreatePersonalPost"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivityCreateEditPost"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivityCreateAddText"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivitySearchPostData"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivitySharePost"
+            android:exported="false" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="false"
+            android:theme="@style/CropTheme" />
+        <activity
+            android:name=".Activity.ActivityFeedback"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.festival.dailypostermaker.MyUtils.CachingGlideModule"
+            android:value="AppGlideModule" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".Service.FirebaseMessageReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <receiver
+            android:name=".Service.CancelNotification"
+            android:exported="false" />
+        <receiver
+            android:name=".Service.DownloadCompleteReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@xml/gma_ad_services_config"
+            tools:replace="android:resource" />
+
+    </application>
+
+</manifest>

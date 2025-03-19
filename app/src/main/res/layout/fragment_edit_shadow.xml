@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/shadow"
+        android:textColor="#605F5F"
+        android:textSize="@dimen/_11ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/shadowSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxHeight="@dimen/_3sdp"
+            android:progressDrawable="@drawable/progressbar_line"
+            android:thumb="@drawable/progressbar_thumb" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/colorPickerImg"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:src="@drawable/icon_color_picker" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shadowColorRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_color_edit_post" />
+
+    </LinearLayout>
+
+</LinearLayout>

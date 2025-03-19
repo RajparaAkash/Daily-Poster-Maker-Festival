@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".Activity.ActivityWelcome">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dotsIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            app:dotsColor="#E8E1E3"
+            app:dotsCornerRadius="@dimen/_10sdp"
+            app:dotsSize="@dimen/_8sdp"
+            app:dotsSpacing="@dimen/_4sdp"
+            app:dotsWidthFactor="2.5"
+            app:progressMode="true"
+            app:selectedDotColor="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/nextImg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/ripple_50dp_black"
+                android:src="@drawable/welcome_next_img" />
+
+            <TextView
+                android:id="@+id/getStartedTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_50sdp"
+                android:background="@drawable/bg_50dp_gradient_primary"
+                android:fontFamily="@font/inter_semi_bold"
+                android:foreground="@drawable/ripple_50dp_black"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="@string/get_started"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/ad_native_space_holder_small" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

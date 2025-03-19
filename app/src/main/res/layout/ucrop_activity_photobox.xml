@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ucrop_photobox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/toolbarLy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="#1B1B1B"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/closeImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/icon_close_white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_medium"
+            android:includeFontPadding="false"
+            android:text="@string/edit_photo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/doneTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/bg_50dp_gradient_primary"
+            android:foreground="@drawable/ripple_50dp_black"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:src="@drawable/icon_tick_save_crop" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ucrop_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/controls_wrapper"
+        android:layout_below="@+id/toolbarLy"
+        android:layout_marginBottom="-12dp">
+
+        <ImageView
+            android:id="@+id/image_view_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ucrop_vector_crop"
+            tools:background="@drawable/ucrop_vector_crop"
+            tools:ignore="ContentDescription,MissingPrefix" />
+
+        <com.yalantis.ucrop.view.UCropView
+            android:id="@+id/ucrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/controls_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivityEditDetails">
+
+    <include layout="@layout/ad_banner_space_holder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/backLay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_7sdp"
+            android:foreground="@drawable/ripple_50dp_primary">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/icon_back" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_medium"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="@string/edit_profile"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/settingImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/icon_settings" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="#F8E9DE"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:adjustViewBounds="true"
+            android:paddingVertical="@dimen/_8sdp"
+            android:src="@drawable/icon_premium_edit_profile" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_medium"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="@string/tap_to_unlock_all"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/proTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/bg_50dp_gradient_primary"
+            android:backgroundTint="#FD6B01"
+            android:fontFamily="@font/inter_semi_bold"
+            android:foreground="@drawable/ripple_50dp_black"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="@dimen/_18sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="PRO"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/bg_tab_layout">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:background="@null"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@null" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/headerViewColor" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

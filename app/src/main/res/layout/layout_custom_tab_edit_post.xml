@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tabImg"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/icon_tab_edit_post_01" />
+
+    <TextView
+        android:id="@+id/tabTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/inter_medium"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="Home"
+        android:textColor="@color/tabUnSelectColor"
+        android:textSize="12sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

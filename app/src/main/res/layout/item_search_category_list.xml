@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/bg_search_category_list">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@drawable/bg_search_category_list"
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/categoryImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_place_holder" />
+
+            <TextView
+                android:id="@+id/categoryNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="@string/app_name"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_11ssp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

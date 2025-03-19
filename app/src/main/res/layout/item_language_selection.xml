@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:layout_marginBottom="@dimen/_6sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/languageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@drawable/bg_language_unselected">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/languageNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/languageTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:fontFamily="@font/inter_regular"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/languageIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/language_unselected_img" />
+
+    </RelativeLayout>
+
+</LinearLayout>

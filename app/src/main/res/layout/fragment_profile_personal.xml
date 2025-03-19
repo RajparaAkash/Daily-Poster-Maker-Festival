@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".Fragment.FragmentProfilePersonal">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_medium"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="@string/photo"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp" />
+
+            <RelativeLayout
+                android:id="@+id/pProfileLay"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/bg_profile_logo_img">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/upload_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/inter_regular"
+                        android:includeFontPadding="false"
+                        android:lines="1"
+                        android:text="@string/upload"
+                        android:textColor="#999898"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/pProfileImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    app:riv_corner_radius="@dimen/_10sdp"
+                    app:riv_mutate_background="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:fontFamily="@font/inter_medium"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="@string/name"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/pEtName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/bg_edit_text"
+                android:drawableStart="@drawable/icon_edit_profile_name"
+                android:drawablePadding="@dimen/_8sdp"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/your_name"
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12ssp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="#999898"
+                android:textCursorDrawable="@drawable/bg_cursor_custom"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:fontFamily="@font/inter_medium"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="@string/mobile_no"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/pEtMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/bg_edit_text"
+                android:drawableStart="@drawable/icon_edit_profile_mobile"
+                android:drawablePadding="@dimen/_8sdp"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/your_mobile_no"
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12ssp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="#999898"
+                android:textCursorDrawable="@drawable/bg_cursor_custom"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:fontFamily="@font/inter_medium"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="@string/about_you"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/pEtAbout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/bg_edit_text"
+                android:drawableStart="@drawable/icon_edit_profile_about"
+                android:drawablePadding="@dimen/_8sdp"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/about_you"
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12ssp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="#999898"
+                android:textCursorDrawable="@drawable/bg_cursor_custom"
+                android:textSize="@dimen/_13ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:background="@color/subBackgroundColor"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:fontFamily="@font/inter_medium"
+                    android:includeFontPadding="false"
+                    android:lines="1"
+                    android:text="@string/social_media"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pLayChangeSocialMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/pTxtSocialMedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:includeFontPadding="false"
+                    android:lines="1"
+                    android:text="@string/instagram"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/icon_edit_profile_arrow_down" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/pEtSocialMedia"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/bg_edit_text"
+                android:drawableStart="@drawable/icon_edit_profile_instagram"
+                android:drawablePadding="@dimen/_8sdp"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/instagram"
+                android:imeOptions="actionDone"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12ssp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="#999898"
+                android:textCursorDrawable="@drawable/bg_cursor_custom"
+                android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/updateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginHorizontal="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/bg_12dp_gradient_primary"
+        android:fontFamily="@font/inter_semi_bold"
+        android:foreground="@drawable/ripple_12dp_black"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp" />
+
+</LinearLayout>

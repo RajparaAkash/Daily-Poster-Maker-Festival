@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorAccent">#3C9AD2</color>
+    <color name="colorPrimary">#3C9AD2</color>
+    <color name="colorPrimaryDark">#0B6BA4</color>
+
+    <color name="gradientStartColor">#3089C4</color>
+    <color name="gradientEndColor">#4BAFE3</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="subBackgroundColor">#F7F7F7</color>
+    <color name="headerViewColor">#F9F9F9</color>
+    <color name="textColor">#1C1B1B</color>
+    <color name="defaultPostBgColor">#F5F5DC</color>
+    <color name="tabEditUnselectColor">#494949</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="tabSelectColor">@color/colorPrimary</color>
+    <color name="tabUnSelectColor">#4D626D</color>
+    <color name="indicatorUnselectColor">#E9E9E9</color>
+    <color name="shimmerColor">#F1F1F1</color>
+    <color name="shimmerPlaceholder">#dddddd</color>
+
+
+
+    <!--*********-->
+    <color name="ucrop_color_active_controls_color">@color/colorPrimary</color>
+    <color name="ucrop_color_widget">#BBBBBB</color>
+    <color name="ucrop_color_widget_rotate_mid_line">@color/colorPrimary</color>
+    <color name="ucrop_color_progress_wheel_line">@color/white</color>
+    <color name="ucrop_color_statusbar">#1B1B1B</color>
+    <color name="ucrop_color_widget_active">#FFF</color>
+    <color name="ucrop_color_crop_background">#000</color>
+    <color name="ucrop_color_default_crop_grid">#80ffffff</color>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <color name="ucrop_color_default_dimmed">#8c000000</color>
+    <color name="ucrop_color_default_logo">#4f212121</color>
+
+</resources>

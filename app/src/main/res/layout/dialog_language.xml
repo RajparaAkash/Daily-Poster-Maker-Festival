@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardBackgroundColor="#E4E4E4"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="2dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_1sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_7sdp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_40sdp"
+                    android:paddingBottom="@dimen/_3sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:gravity="center_vertical|start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="All"
+                        android:textColor="@color/tabUnSelectColor"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvEnglish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:gravity="center_vertical|start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="English"
+                        android:textColor="@color/tabUnSelectColor"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvHindi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:gravity="center_vertical|start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="हिंदी"
+                        android:textColor="@color/tabUnSelectColor"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMarathi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:gravity="center_vertical|start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="मराठी"
+                        android:textColor="@color/tabUnSelectColor"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvGujarati"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:gravity="center_vertical|start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="ગુજરાતી"
+                        android:textColor="@color/tabUnSelectColor"
+                        android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_9sdp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:src="@drawable/img_popup_arrow" />
+
+</RelativeLayout>
